@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aplikasi 1</title>
+
+  <!-- ekstrenal file loads from here -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <!-- library to laod fw vr -->
+  <script src="aframe.js"></script>
+
+  <!-- mengubah tema bar saat aplikasi dibuka -->
+  <meta name="theme-color" content="orange">
+</head>
+
+<body>
+  <h1>Travel Log</h1>
+
+  <h2>360 VR Panorama</h2>
+  <a-scene embedded style="width: 100%; height: 300px">
+    <a-sky src="pano.jpg"></a-sky>
+  </a-scene>
+
+  <h2>Video</h2>
+  <video src="video.mp4" width="300" height="200" controls></video>
+
+  <h2>List of Visted countires</h2>
+  <ul>
+    <li>Indonesia</li>
+    <li>Malaysia</li>
+    <li>Singapore</li>
+  </ul>
+
+  <h2>Image Gallery</h2>
+  <img src="photo.jpg" width="100%">
+  <img src="animation.gif" width="100%" onclick="speak()">
+
+  <h2>Contact and Social Networks</h2>
+  <a href="http://twitter.com/harissucipto">@haris</a>
+  <a href="tel:+62803123272">Call me</a>
+  <a href="whatsapp://send?text=Look at my travel log">Send via wahtasapp</a>
+</body>
+
+</html>
